@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: @font2;
+}
+
+h2, h3, h4, h5, a {
+  font-family: @font3;
+  letter-spacing: .2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: .2rem;
+  font-family: @font6;
+
+  @media @mobile {
+    font-size: 3.2rem;
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 2.3rem;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  font-family: @font1;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+}
+
+button {
+  font-family: @font6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 75%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  @media @mobile {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

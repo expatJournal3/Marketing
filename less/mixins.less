@@ -1,0 +1,29 @@
+// Mixins in here
+
+.buttons(@align) {
+    background-color: rgb(34, 123, 126);
+    color: white;
+    text-align: @align;
+    padding: 10px 10px;
+    margin: 0 20px;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.animation(@direction) {
+    animation-name: animation1;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: @direction;
+}
+
+@keyframes animation1 {
+    from {
+        background-color: rgb(34, 123, 126);
+    }
+    to {
+        background-color: rgb(12, 50, 51);
+    }
+}

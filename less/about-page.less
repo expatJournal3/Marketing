@@ -1,0 +1,86 @@
+.aboutPage {
+  margin: 0 auto;
+  max-width: 100%;
+
+  @media @mobile {
+    padding-top: 0px;
+  }
+
+  .aboutTitle {
+    margin: 0 auto 20px auto;
+    text-align: center;
+    color: white;
+    padding: 100px 10px 20px 10px;
+    font-family: @font6;
+    border-bottom: 1px solid @blue3;
+    background-color: @blue3;
+
+    @media @tablet {
+      padding-top: 0px;
+    }
+  }
+
+  .teamBox {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 80%;
+
+    .teamMiniBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 100%;
+
+      @media @tablet {
+
+      }
+
+      @media @tablet {
+        flex-direction: column;
+      }
+  
+      .teamMember {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @media @tablet {
+          width: 100%;
+        }
+
+        @media @mobile {
+          width: 80%;
+        }
+
+        h3 {
+          font-size: 3rem;
+          font-family: @font3;
+          padding-top: 10px;
+
+        }
+
+        p {
+          font-size: 2rem;
+          font-family: @font6;
+          color: rgb(78, 78, 78);
+
+        }
+
+        i {
+          color: @blue3;
+        }
+  
+        .teamImg {
+          size: 40%;
+          height: 300px;
+          width: auto;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
