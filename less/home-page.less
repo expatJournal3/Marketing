@@ -16,8 +16,8 @@
         
         @media @tablet {
           padding-top: 20px;
-        }
-      }
+        }//Closes h2 @tablet
+      }//Closes h2
 
       p {
         font-size: 2rem;
@@ -25,8 +25,8 @@
 
         @media @mobile {
           text-align: center;
-        }
-      }
+        }//Closes p @mobile
+      }//Closes p
 
       .buttonBox {
         display: flex;
@@ -34,22 +34,22 @@
         align-items: center;
         width: 35%;
         padding-top: 20px;
+        padding-bottom: 10px;
 
         @media @tablet {
           width: 80%;
-        }
+        }//Closes .buttonBox @tablet
 
         @media @mobile {
           flex-direction: column;
           justify-content: space-between;
           width: 100%;
-        }
-
+        }//Closes .buttonBox @mobile
 
         p {
           font-size: 1rem;
-        }
-      }
+        }//Closes p
+      }//Closes .buttonBox
       
       button {
         border: none;
@@ -67,7 +67,7 @@
           width: 70%;
           padding: 10px 40px;
           margin: 0 10px;
-        }
+        }//Closes button @tablet
 
         @media @mobile {
           width: 90%;
@@ -76,46 +76,42 @@
           background-color: @blue1;
           color: @white;
           border: 1px solid black;
-
-        }
+        }//Closes button @mobile
 
         &:hover {
           background-color: @blue3;
           color: @white;
-        }
-      }
+        }//Closes button &:hover
+      }//Closes button
       
       @media @tablet{
         padding-top: 15px;
-      }
-    }
-  }
+      }//Closes .headerBox @tablet
+    }//Closes .headerBox
+  }//Closes header
 
-  .content-destination {
+  .whatIsExpath {
     padding-top: 20px;
 
     @media @tablet {
       text-align: center;
-    }
+    }//Closes .whatIsExpath @tablet
     
     h2{
       text-align: center;
-    }
-  }
+    }//Closes h2
+  }//Closes .whatIsExpath
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  .contentSection {
+    .contentMix();
 
     @media @tablet {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .text-content {
+    }//Closes .contentSection @tablet
+
+    .textContent {
       width: 48%;
       padding-right: 1%;
       text-align: center;
@@ -123,51 +119,50 @@
       @media @tablet {
         width: 100%;
         padding: 0;
-      }
-    }
+      }//Closes .textContent @tablet
+    }//Closes .textContent
 
-    .img-content {
+    .imgContent {
       width: 48%;
       padding-left: 1%;
 
       @media @tablet {
         width: 100%;
         padding: 0;
-      }
+      }//Closes .imgContent @tablet
 
       img {
         border-radius: 7px;
 
         @media @mobile {
           width: 140%;
-        }
-      }
-    }
-  }
+        }//Closes img @mobile
+      }//Closes img
+    }//Closes .imgContent
+  }//Closes .contentSection
 
-  .inverse-content {
+  .inverseContent {
     padding-bottom: 30px;
     border-bottom: @border;
 
     @media @tablet {
       border-bottom: none;
       padding-bottom: 0px;
-    }
+    }//Closes .inverseContent @tablet
 
-    .text-content {
+    .textContent {
       padding-left: 1%;
       padding-right: 0;
       text-align: center;
-    }
+    }//Closes .textContent
 
-    .img-content {
+    .imgContent {
       padding-right: 1%;
       padding-left: 0;
 
       @media @tablet {
         order: 1;
-      }
-    }
-  }
-
-}// home
+      }//Closes .imgContent @tablet
+    }//Closes .imgContent
+  }//Closes .inverseContent
+}//Closes .home

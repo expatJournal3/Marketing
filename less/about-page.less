@@ -4,7 +4,7 @@
 
   @media @mobile {
     padding-top: 0px;
-  }
+  }// Closes .aboutPage @mobile
 
   .aboutTitle {
     margin: 0 auto 20px auto;
@@ -17,8 +17,8 @@
 
     @media @tablet {
       padding-top: 0px;
-    }
-  }
+    }//Closes .aboutTitle @tablet
+  }//Closes .aboutTitle
 
   .teamBox {
     display: flex;
@@ -34,12 +34,8 @@
       width: 100%;
 
       @media @tablet {
-
-      }
-
-      @media @tablet {
         flex-direction: column;
-      }
+      }// Closes .teamMiniBox @tablet
   
       .teamMember {
         width: 35%;
@@ -50,37 +46,45 @@
 
         @media @tablet {
           width: 100%;
-        }
+        }// Closes .teamMember @tablet
 
         @media @mobile {
           width: 80%;
-        }
+        }// Closes .teamMember @mobile
 
         h3 {
           font-size: 3rem;
           font-family: @font3;
           padding-top: 10px;
-
-        }
+        }// Closes h3
 
         p {
           font-size: 2rem;
           font-family: @font6;
           color: rgb(78, 78, 78);
-
-        }
+        }// Closes p
 
         i {
           color: @blue3;
-        }
-  
+          transition-duration: 1s;
+
+
+          &:hover {
+            transform: rotate(360deg)
+          }// Closes i &:hover
+        }// Closes i
+
         .teamImg {
-          size: 40%;
-          height: 300px;
+          max-width: 60%;
           width: auto;
           border-radius: 8px;
-        }
-      }
-    }
-  }
-}
+
+          @media @tablet {
+            max-width: 80%;
+          }
+
+        }// Closes .teamImg
+      }// Closes .teamMember
+    }// Closes .teamMiniBox
+  }// Closes .teamBox
+}// Closes .aboutPage
